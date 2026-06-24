@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Assistant", sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-body, html { 
+body, html {
+    background-color: rgba(21, 69, 82, 0.836);
     height: 100vh;
     width: 100vw;
 }
@@ -16,5 +17,86 @@ main {
     position: relative;
     height: 100vh;
     width: 100vw;
+}
+
+section#login { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px;;
+    transform: translate(-50%, -50%);
+
+}
+
+section#login > div#imagem { 
+    display: block;
+    background: url(../imagens/pexels-gsn-travel-34149170.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+section#login > div#formulario { 
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    color: rgb(129, 129, 129);
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form > div.campo {
+    background-color: white;
+    border: 2px solid lightgrey;
+    display: block;
+    width: 100%;
+    height: 43px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+div.campo > label { 
+    display: none;
+}
+
+div.campo > input { 
+    background-color: white;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+div.campo > input:focus-within { 
+    background-color: rgb(231, 231, 231);
+    border: none;
+}
+
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 43%;
+    background-color: rgba(21, 69, 82, 0.836);
+    color: white;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover { 
+    background-color:rgba(37, 116, 138, 0.836);
 }
 

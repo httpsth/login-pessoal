@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -15,7 +18,22 @@
 
             <div id="formulario">
                 <h1>Welcome back!</h1>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin">Login</label>
+                        <input type="email" name="login" id="ilogin" placeholder="Email address" autocomplete="email">
+                    </div>
 
+                    <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Password" autocomplete="current-password">
+                    </div>
+                    
+                    <input type="checkbox" name="remember" id="iremember">
+                    <label for="iremember">Remember password</label>
+                   
+                    <input type="submit" value="Sign in">
+                </form>
             </div>
         </section>
     </main>
