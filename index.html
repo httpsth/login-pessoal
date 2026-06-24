@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
@@ -29,8 +30,10 @@
                         <input type="password" name="senha" id="isenha" placeholder="Password" autocomplete="current-password">
                     </div>
                     
-                    <input type="checkbox" name="remember" id="iremember">
-                    <label for="iremember">Remember password</label>
+                    <div id="remember">
+                        <input type="checkbox" name="remember" id="iremember">
+                        <label for="iremember">Remember password</label>
+                    </div>
                    
                     <input type="submit" value="Sign in">
                 </form>
